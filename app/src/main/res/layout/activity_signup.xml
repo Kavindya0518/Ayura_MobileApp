@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFB7B4"
+    android:padding="24dp"
+    tools:context=".Signup">
+
+  <!-- Title -->
+  <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:text="@string/create_account"
+      android:textColor="#000000"
+      android:textSize="26sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Name -->
+  <EditText
+      android:id="@+id/etName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:background="@drawable/rounded_edittext"
+      android:hint="@string/full_name"
+      android:inputType="textPersonName"
+      android:padding="12dp"
+      android:textColor="#000000"
+      android:textColorHint="#7B3F00"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+  <!-- Age -->
+  <EditText
+      android:id="@+id/etAge"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/rounded_edittext"
+      android:hint="@string/age"
+      android:inputType="number"
+      android:padding="12dp"
+      android:textColor="#000000"
+      android:textColorHint="#7B3F00"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etName" />
+
+  <!-- Email -->
+  <EditText
+      android:id="@+id/etEmail"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/rounded_edittext"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+      android:padding="12dp"
+      android:textColor="#000000"
+      android:textColorHint="#7B3F00"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etAge" />
+
+  <!-- Password -->
+  <EditText
+      android:id="@+id/etPassword"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/rounded_edittext"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      android:padding="12dp"
+      android:textColor="#000000"
+      android:textColorHint="#7B3F00"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+  <!-- Sign Up Button -->
+  <Button
+      android:id="@+id/btnSignup"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="26dp"
+      android:backgroundTint="#7B3F00"
+      android:text="@string/sign_up"
+      android:textColor="#FFFFFF"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etPassword" />
+
+  <!-- Already have an account? Sign In -->
+  <TextView
+      android:id="@+id/tvAlreadyAccount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="@string/already_have_an_account_sign_in"
+      android:textColor="#7B3F00"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btnSignup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
